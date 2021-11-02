@@ -55,9 +55,9 @@ if find /tmp/picon.zip; then
 fi
 
 
-wget http://localhost/web/servicelistreload?mode=0 -O /dev/null
+wget "http://localhost/web/servicelistreload?mode=0" -O /dev/null
 
-wget http://localhost/web/message?text=System%20Updated&type=1&timeout=5 -O /dev/null
+wget "http://localhost/web/message?text=System%20Updated&type=1&timeout=5" -O /dev/null
 exit
 
 
