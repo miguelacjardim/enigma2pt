@@ -1,5 +1,6 @@
 #!/bin/sh
-
+opkg update
+opkg install curl
 #Change the URL to point to your Bouquet tar.gz file
 BQ="https://github.com/miguelacjardim/enigma2pt/releases/download/1.0/enigma2.zip"
 BP="https://github.com/miguelacjardim/enigma2pt/releases/download/1.0/picon.zip"
@@ -52,3 +53,10 @@ if find /tmp/picon.zip; then
   rm -rf *db
   sleep 3
 fi
+
+
+wget http://localhost/web/servicelistreload?mode=0 -O /dev/null
+
+exit
+
+
